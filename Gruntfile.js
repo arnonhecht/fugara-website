@@ -36,32 +36,26 @@ module.exports = function (grunt) {
     uglify: {
         main: {
             src: 'src/js/main.js',
-            dest: 'dist/js/main2.min.js'
+            dest: 'dist/js/main.min.js'
         },
         vendor: {
           files: [{
-            'dist/js/vendor.min.js': ['src/js/vendor/**/*.js']
+            'dist/js/vendor.min.js': ['src/vendor/js/**/*.js']
           }]
         }
     },
     less: {
-        expanded: {
-            options: {
-                paths: ["css"]
-            },
-            files: {
-                "dist/css/main.css": ["src/less/**/*.less", "src/less/**/*.css"]
-            }
+      development: {
+        options: {
+          compress: true,
+          yuicompress: true,
+          optimization: 2
         },
-        minified: {
-            options: {
-                paths: ["css"],
-                cleancss: true
-            },
-            files: {
-                "dist/css/main.min.css": "src/less/main.less"
-            }
+        files: {
+          "dist/css/main.min.css": ["src/less/**/*.less", "src/less/**/*.css"],
+          "dist/css/vendor.min.css": ["src/vendor/less/**/*.less", "src/vendor/less/**/*.css"]
         }
+      }
     },
     watch: {
         markup: {
@@ -72,14 +66,14 @@ module.exports = function (grunt) {
             },
         },
         scripts: {
-            files: ['src/js/*.js'],
+            files: ['src/js/*.js', 'src/vendor/js/**/*.js'],
             tasks: ['uglify', 'assemble'],
             options: {
                 spawn: false,
             },
         },
         less: {
-            files: ['src/less/**/*.less'],
+            files: ['src/less/**/*.less', 'src/less/**/*.css', 'src/vendor/less/**/*.less', 'src/vendor/less/**/*.css'],
             tasks: ['less', 'assemble'],
             options: {
                 spawn: false,

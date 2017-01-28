@@ -46,3 +46,32 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+$(document).ready(function (){
+    var galleryElement = $("#gallery");
+
+    if (galleryElement) {
+        // Init Image Gallery
+        var setId = 'photo-set';
+        var photoSet = galleryElement.attr('data-photo-set');
+        var options = { 
+            //FLICKR API KEY
+            Key: '840349b751c5ad5d47bbf59738ff3ef9',
+            //Secret
+            Secret: 'ce89ef1463bf1f39',
+            //FLICKR user ID
+            User: '146918508@N08',
+            //Flickr PhotoSet ID
+            PhotoSet: photoSet,
+            /*-- VIEWBOX SETTINGS --*/
+            Speed   : 400,    //Speed of animations
+            navigation  : 1,    //(true) <a href="http://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a> (arrows)
+            keyboard  : 1,    //(true) Keyboard navigation
+            numberEl  : 1     //(true) Number elements
+
+        }
+
+        galleryElement.flickrGallery(options);
+    }
+});
+
