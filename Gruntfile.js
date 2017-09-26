@@ -57,7 +57,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    build_modules: {
+    watch: {
         markup: {
             files: ['src/bonnet/**/*', 'src/content/**/*'],
             tasks: ['assemble'],
@@ -93,6 +93,6 @@ module.exports = function (grunt) {
 
   /* grunt tasks */
   grunt.registerTask('default', ['assemble', 'connect']);
-  grunt.registerTask('watch', ['assemble', 'connect', 'build_modules']);
+  grunt.registerTask('work', ['assemble', 'connect', 'watch']);
 
 };
