@@ -1,9 +1,15 @@
 @import '../variables.less';
+
 header.page-layout {
     background-color: @theme-primary;
 
     .header-content {
-        text-align: left;
+        @media(min-width: @bs-screen-md) {
+            text-align: left;
+        }
+        @media(max-width: @bs-screen-md - 1px) {
+            text-align: center;
+        }
     }
     .header-img {
         background-size: cover;
