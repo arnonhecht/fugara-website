@@ -61,6 +61,7 @@ p {
 
 section {
     padding: 100px 0;
+    background-color: #fff;
 }
 
 aside {
@@ -161,27 +162,9 @@ header {
     background-position: center;
     text-align: center;
     color: white;
-    &.index {
-        background-image: url('../img/header.jpg');
-    }
-    &.fugatron {
-        background-image: url('../img/fugatron_header.jpg');
-    }
-    &.fluid {
-        background-image: url('../img/fluid_header.jpg');
-    }
-    &.lamp {
-        background-image: url('../img/lamp_header.jpg');
-    }
-    &.tunnel {
-        background-image: url('../img/tunnel_header.jpg');
-    }
-    &.about {
-        background-image: url('../img/about_header.jpg');
-    }
-    &.fund-raising {
-        background-image: url('../img/fund_raising_header.jpg');
-    }
+    // &.index {
+    //     background-image: url('../img/header.jpg');
+    // }
 
     .header-content {
         position: relative;
@@ -233,7 +216,8 @@ header {
 // Sections
 
 .section-heading {
-    margin-top: 0;
+    margin: 0 auto 40px;
+    text-align: center;
 }
 
 .service-box {
@@ -252,6 +236,9 @@ header {
     display: block;
     max-width: 650px;
     margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+
     .portfolio-box-caption {
         color: white;
         opacity: 0;

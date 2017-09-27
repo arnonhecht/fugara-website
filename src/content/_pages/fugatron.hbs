@@ -1,61 +1,44 @@
 
-
-    <header class="fugatron">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Midburn 2016 Fugara Camp</h1>
-                <hr>
-                <p>
-                    For Midburn 2016 we decided to build a huge parametricly designed structure.
+{{> 
+    project-page-header
+    page-context-class="fugatron" 
+    header-text="Midburn 2016 Fugara Camp" 
+    header-description="For Midburn 2016 we decided to build a huge parametricly designed structure.
                     Beeming with lights in the night and cooling shade during the day this was our home for the week and our gift to the playa.
-                    It housed many activities from relaxing meditation to mind blowing parties.
+                    It housed many activities from relaxing meditation to mind blowing parties."
+    data-photo-set="72157675982014164"
+}}
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">The Challenge</h2>
+                <hr class="primary">
+                <p class="text-muted">
+                    Fugara's 2016 camp was a 3 legged steel structure specialy crafted to hold a 2 floors in which participants can relax and take a look at the playa from above.
+                </p>
+                <p class="text-muted">
+                    The structure was covered with wooden boards which were milled according to 3D models which we created using Grasshopper for Rhino.
                 </p>
             </div>
         </div>
-    </header>
+    </div>
+</section>  
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Challenge</h2>
-                    <hr class="primary">
-                    <p class="text-muted">
-                        Fugara's 2016 camp was a 3 legged steel structure specialy crafted to hold a 2 floors in which participants can relax and take a look at the playa from above.
-                    </p>
-                    <p class="text-muted">
-                        The structure was covered with wooden boards which were milled according to 3D models which we created using Grasshopper for Rhino.
-                    </p>
-                </div>
-            </div>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row text-center">
+            Thanks:
         </div>
-    </section>  
-
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row text-center">
-                Thanks:
-            </div>
-            <div class="row text-center">
-                To <a class="white-link" href="https://www.facebook.com/fablabilholon/?fref=ts">Fablabil</a> for providing us with 3D printing equipment in order to experiment and create the outer covers of our camp's structure!
-            </div>
+        <div class="row text-center">
+            To <a class="white-link" href="https://www.facebook.com/fablabilholon/?fref=ts">Fablabil</a> for providing us with 3D printing equipment in order to experiment and create the outer covers of our camp's structure!
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Some eye candy:</h2>
-                    <hr class="primary">
-
-                    <div class="row text-center">
-                        <div class="niceGallery" id="gallery" data-photo-set="72157675982014164"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
+{{> images-block data-photo-set-id="72157675982014164"}}
 
     

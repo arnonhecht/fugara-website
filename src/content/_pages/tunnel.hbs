@@ -1,18 +1,13 @@
 
-    <header class="tunnel">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Time Tunnel</h1>
-                <hr>
-                <p>
+{{> 
+    project-page-header
+    page-context-class="tunnel" 
+    header-text="Time Tunnel" 
+    header-description="
                     The Time Tunnel is a 40 meters long underground tunnel going underneath an amphitheater which creates a sense of movement through a worm hole.
-                </p>
-                <p>
                     It was set to be the entrance to the Midburn Decompression Party and conveyed the sense of moving transitioning to another dimention in time and space.
-                </p>
-            </div>
-        </div>
-    </header>
+                    "
+}}
 
    <section class="bg-primary" id="about">
         <div class="container">
@@ -41,9 +36,4 @@
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row text-center">
-                Pictures comming soon!!!
-        </div>
-    </section>  
+    {{> images-block data-photo-set-id="72157687237587903"}}

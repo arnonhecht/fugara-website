@@ -1,8 +1,51 @@
+@import "../variables.less";
+
 
 .index-page {
+    .header-content {
+        top: 25%;
+    }
+    .header-background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background: url('../img/header.jpg') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+    }
     .coming-soon {
         padding: 10px;
         border-radius: 15px;
+    }
+
+    .parallax {
+        height: 600px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .fugara-camp-bg {
+        background-image: url('../img/index/fugara_camp.jpg');
+    }
+    .fugara-camp-build-bg {
+        background-image: url('../img/index/fugara_camp_build.jpg');
+    }
+    .sea-garden-bg {
+        background-image: url('../img/index/sea_garden.jpg');
+    }
+    .fugatron-build-bg {
+        background-image: url('../img/index/fugatron_build.jpg');
+    }
+
+    .img-container {
+        padding: 10px;
     }
 }
 

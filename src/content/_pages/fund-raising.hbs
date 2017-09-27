@@ -1,16 +1,13 @@
 
 
-    <header class="fund-raising">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Fund Raising Party</h1>
-                <hr>
-                <p>
-                    For 12 hours we played music, operated art instalations, served food and drinks and basicaly just fooled around.
-                </p>
-            </div>
-        </div>
-    </header>
+{{> 
+    project-page-header
+    page-context-class="fund-raising" 
+    header-text="Fund Raising Party" 
+    header-description="
+                     For 12 hours we played music, operated art instalations, served food and drinks and basicaly just fooled around.
+                    "
+}}
 
    <section class="bg-primary" id="about">
         <div class="container">
@@ -26,11 +23,4 @@
         </div>
     </section>
 
-    <section id="services">
-            <div class="container">
-            <div class="row text-center">
-                Pictures coming soon!
-            </div>
-        </div>
-    </section>  
-
+    {{> images-block data-photo-set-id="72157686379423491"}}
